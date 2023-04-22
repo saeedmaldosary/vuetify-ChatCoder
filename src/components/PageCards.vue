@@ -6,7 +6,7 @@
           :title="card.title"
           :subTitle="card.subTitle"
           :icon="card.icon"
-          @click="navigateToChatView()"
+          @click="navigateToChatView(card)"
         />
       </v-col>
     </v-row>
@@ -16,7 +16,7 @@
           :title="card.title"
           :subTitle="card.subTitle"
           :icon="card.icon"
-          @click="navigateToChatView()"
+          @click="navigateToChatView(card)"
         />
       </v-col>
     </v-row>
@@ -26,7 +26,7 @@
           :title="card.title"
           :subTitle="card.subTitle"
           :icon="card.icon"
-          @click="navigateToChatView()"
+          @click="navigateToChatView(card)"
         />
       </v-col>
     </v-row>
@@ -36,7 +36,7 @@
           :title="card.title"
           :subTitle="card.subTitle"
           :icon="card.icon"
-          @click="navigateToChatView()"
+          @click="navigateToChatView(card)"
         />
       </v-col>
     </v-row>
@@ -79,8 +79,8 @@ export default {
     };
   },
   methods: {
-    navigateToChatView() {
-      this.$router.push({ name: "chat" });
+    navigateToChatView(card) {
+      this.$router.push({ name: "chat", params: { card } });
     },
   },
 };
