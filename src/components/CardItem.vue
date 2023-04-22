@@ -5,7 +5,7 @@
         <img :src="iconPath" />
       </v-avatar>
       <v-list-item-content>
-        <v-list-item-title style="font-size: 14px">
+        <v-list-item-title class="font-weight-bold" style="font-size: 14px">
           Headline 5
         </v-list-item-title>
         <v-list-item-subtitle style="font-size: 12px" class="text-wrap"
