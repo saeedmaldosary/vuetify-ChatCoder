@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-wrapper">
     <page-header />
     <page-cards />
   </div>
@@ -18,3 +18,16 @@ export default {
   },
 };
 </script>
+
+<style>
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+</style>

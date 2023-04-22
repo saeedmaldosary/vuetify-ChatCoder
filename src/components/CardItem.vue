@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="344" outlined>
+  <v-card outlined>
     <v-list-item three-line>
       <v-list-item-avatar tile size="40" color="grey"></v-list-item-avatar>
       <v-list-item-content>
