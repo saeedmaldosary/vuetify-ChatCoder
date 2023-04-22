@@ -1,16 +1,16 @@
 <template>
-  <v-card outlined style="box-shadow: none">
+  <v-card outlined style="box-shadow: none" @click="$emit('click')">
     <v-list-item>
       <v-avatar tile size="50" class="mr-2">
-        <img :src="iconPath" />
+        <img :src="icon" />
       </v-avatar>
       <v-list-item-content>
         <v-list-item-title class="font-weight-bold" style="font-size: 16px">
-          Headline 5
+          {{ title }}
         </v-list-item-title>
-        <v-list-item-subtitle style="font-size: 14px" class="text-wrap"
-          >Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle
-        >
+        <v-list-item-subtitle style="font-size: 14px" class="text-wrap">{{
+          subTitle
+        }}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
   </v-card>
@@ -19,10 +19,10 @@
 <script>
 export default {
   name: "CardItem",
-  data() {
-    return {
-      iconPath: "/images/bug.png",
-    };
+  props: {
+    title: String,
+    subTitle: String,
+    icon: String,
   },
 };
 </script>
