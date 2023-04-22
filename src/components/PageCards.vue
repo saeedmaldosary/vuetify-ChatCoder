@@ -53,27 +53,27 @@ export default {
       cards: [
         {
           id: 1,
-          title: "Card 1",
-          subTitle: "Greyhound divisely hello coldly fonwderfully",
-          icon: "/images/bug.png",
+          title: "Text to command",
+          subTitle: "Translate text into programmatic commands.",
+          icon: "/images/command.png",
         },
         {
           id: 2,
-          title: "Card 2",
-          subTitle: "Greyhound divisely hello coldly fonwderfully",
+          title: "Bug fixer",
+          subTitle: "Find and fix bugs in source code.",
           icon: "/images/bug.png",
         },
         {
           id: 3,
-          title: "Card 3",
-          subTitle: "Greyhound divisely hello coldly fonwderfully",
-          icon: "/images/bug.png",
+          title: "Explain code",
+          subTitle: "Explain a complicated piece of code.",
+          icon: "/images/hashtag.png",
         },
         {
           id: 4,
-          title: "Card 4",
-          subTitle: "Greyhound divisely hello coldly fonwderfully",
-          icon: "/images/bug.png",
+          title: "SQL translate",
+          subTitle: "Translate natural language to SQL queries.",
+          icon: "/images/question_mark.png",
         },
       ],
     };

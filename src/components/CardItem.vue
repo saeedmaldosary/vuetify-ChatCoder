@@ -1,8 +1,8 @@
 <template>
   <v-card outlined style="box-shadow: none" @click="$emit('click')">
     <v-list-item>
-      <v-avatar tile size="50" class="mr-2">
-        <img :src="icon" />
+      <v-avatar tile rounded size="50" class="mr-2">
+        <img :src="icon" class="rounded" />
       </v-avatar>
       <v-list-item-content>
         <v-list-item-title class="font-weight-bold" style="font-size: 16px">
