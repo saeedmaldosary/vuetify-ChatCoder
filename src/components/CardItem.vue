@@ -1,12 +1,14 @@
 <template>
   <v-card outlined>
     <v-list-item>
-      <v-avatar tile size="40" class="mr-2">
+      <v-avatar tile size="30" class="mr-2">
         <img :src="iconPath" />
       </v-avatar>
       <v-list-item-content>
-        <v-list-item-title> Headline 5 </v-list-item-title>
-        <v-list-item-subtitle class="text-wrap"
+        <v-list-item-title style="font-size: 14px">
+          Headline 5
+        </v-list-item-title>
+        <v-list-item-subtitle style="font-size: 12px" class="text-wrap"
           >Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle
         >
       </v-list-item-content>
