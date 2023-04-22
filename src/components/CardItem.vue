@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined style="box-shadow: none" @click="$emit('click')">
+  <v-card style="box-shadow: none" @click="$emit('click')">
     <v-list-item>
       <v-avatar tile rounded size="50" class="mr-2">
         <img :src="icon" class="rounded" />

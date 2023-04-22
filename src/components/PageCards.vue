@@ -1,7 +1,20 @@
 <template>
   <div class="mx-3">
+    <v-row>
+      <v-col cols="12" md="4">
+        <v-text-field
+          class="mx-4"
+          prepend-inner-icon="mdi-magnify"
+          label="Search"
+          v-model="search"
+          outlined
+          dense
+          clearable
+        ></v-text-field>
+      </v-col>
+    </v-row>
     <v-row v-if="$vuetify.breakpoint.xs">
-      <v-col v-for="card in cards" :key="card.id" :cols="12">
+      <v-col v-for="card in filteredCards" :key="card.id" :cols="12">
         <card-item
           :title="card.title"
           :subTitle="card.subTitle"
@@ -11,7 +24,7 @@
       </v-col>
     </v-row>
     <v-row v-else-if="$vuetify.breakpoint.smAndUp">
-      <v-col v-for="card in cards" :key="card.id" :cols="6">
+      <v-col v-for="card in filteredCards" :key="card.id" :cols="6">
         <card-item
           :title="card.title"
           :subTitle="card.subTitle"
@@ -21,7 +34,7 @@
       </v-col>
     </v-row>
     <v-row v-else-if="$vuetify.breakpoint.mdAndUp">
-      <v-col v-for="card in cards" :key="card.id" :cols="4">
+      <v-col v-for="card in filteredCards" :key="card.id" :cols="4">
         <card-item
           :title="card.title"
           :subTitle="card.subTitle"
@@ -31,7 +44,7 @@
       </v-col>
     </v-row>
     <v-row v-else>
-      <v-col v-for="card in cards" :key="card.id" :cols="3">
+      <v-col v-for="card in filteredCards" :key="card.id" :cols="3">
         <card-item
           :title="card.title"
           :subTitle="card.subTitle"
@@ -50,6 +63,7 @@ export default {
   name: "PageCards",
   data() {
     return {
+      search: "",
       cards: [
         {
           id: 1,
@@ -77,6 +91,13 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    filteredCards() {
+      return this.cards.filter((item) =>
+        item.title.toLowerCase().includes(this.search.toLowerCase())
+      );
+    },
   },
   methods: {
     navigateToChatView(card) {
