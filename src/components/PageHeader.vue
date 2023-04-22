@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h2 class="text-center mt-5">ChatCoder</h2>
-    <p class="text-center mb-5">Your AI coding assistant.</p>
+    <h1 class="text-center" style="margin-top: 50px">ChatCoder</h1>
+    <p style="font-size: 18px; margin-bottom: 50px" class="text-center">
+      Your AI coding assistant.
+    </p>
   </div>
 </template>
 
