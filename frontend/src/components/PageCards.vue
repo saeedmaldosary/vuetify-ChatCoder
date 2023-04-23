@@ -101,7 +101,8 @@ export default {
   },
   methods: {
     navigateToChatView(card) {
-      this.$router.push({ name: "chat", params: { card } });
+      localStorage.setItem("selectedCard", JSON.stringify(card));
+      this.$router.push({ name: "chat" });
     },
   },
 };
