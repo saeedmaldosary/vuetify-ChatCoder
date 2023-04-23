@@ -94,9 +94,19 @@ export default {
   },
   computed: {
     filteredCards() {
+      if (!this.search) {
+        return this.cards;
+      }
       return this.cards.filter((item) =>
         item.title.toLowerCase().includes(this.search.toLowerCase())
       );
+    },
+  },
+  watch: {
+    search: function (newVal) {
+      if (newVal === "") {
+        this.filteredCards = this.cards;
+      }
     },
   },
   methods: {
