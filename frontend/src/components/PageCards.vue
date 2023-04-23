@@ -1,7 +1,7 @@
 <template>
   <div class="mx-3">
     <v-row>
-      <v-col cols="12" md="4">
+      <v-col cols="12" sm="4" md="4">
         <v-text-field
           class="mx-4"
           prepend-inner-icon="mdi-magnify"
