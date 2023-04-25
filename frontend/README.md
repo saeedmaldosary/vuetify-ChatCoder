@@ -1,29 +1,41 @@
-# ChatCoder
+# ChatCoder Frontend
 
-## Project setup
+The ChatCoder Frontend is built using Vue 2 and Vuetify 2, and provides a simple interface for interacting with the ChatCoder backend.
 
-```
-npm install
-```
+## Project Setup
 
-### Compiles and hot-reloads for development
+To set up the project, first clone the repository:
 
 ```
-npm run serve
+git clone https://github.com/saeedmaldosary/vuetify-ChatCoder.git
 ```
 
-### Compiles and minifies for production
+### Frontend Setup
 
-```
-npm run build
-```
+1. Navigate to the `frontend` directory:
 
-### Lints and fixes files
+   ```
+   cd vuetify-ChatCoder/frontend
+   ```
 
-```
-npm run lint
-```
+2. Install the dependencies:
 
-### Customize configuration
+   ```
+   npm install
+   ```
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+3. Start the frontend server:
+
+   ```
+   npm run serve
+   ```
+
+   The server will start at `http://localhost:8080`.
+
+## Usage
+
+To use the ChatCoder Frontend, simply open your web browser and navigate to `http://localhost:8080`.
+
+## Contributing
+
+If you would like to contribute to the ChatCoder Frontend, feel free to fork the repository and submit a pull request. I welcome any contributions that improve the functionality or usability of the project.
