@@ -62,9 +62,16 @@ export default {
   data() {
     return {
       question: "",
+      selectedCard: "",
       wrapper: [],
       loading: false,
     };
+  },
+  created() {
+    const selectedCard = JSON.parse(localStorage.getItem("selectedCard"));
+    if (selectedCard) {
+      this.selectedCard = selectedCard;
+    }
   },
   methods: {
     async fetchAnswer() {
@@ -85,6 +92,7 @@ export default {
           },
           body: JSON.stringify({
             question: this.question,
+            selectedCard: this.selectedCard.title,
           }),
         });
         const data = await res.json();
