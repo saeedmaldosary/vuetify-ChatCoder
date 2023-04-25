@@ -24,10 +24,4 @@ export default {
   max-width: 900px;
   margin: 0 auto;
 }
-
-.page-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f8f8f8;
-}
 </style>
