@@ -14,6 +14,7 @@
                     <v-row no-gutters>
                       <v-col cols="11">
                         <v-textarea
+                          style="background-color: white"
                           outlined
                           hide-details
                           v-model="message"
