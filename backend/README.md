@@ -1,6 +1,4 @@
-## Backend Readme File
 
-```
 # ChatCoder Backend
 
 The ChatCoder Backend is built using Express, dotenv, cors, and OpenAI, and provides the server-side functionality for generating required readme files for your projects.
