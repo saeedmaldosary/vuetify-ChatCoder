@@ -33,7 +33,7 @@ npm install
 
    ```
    OPENAI_API_KEY=<your API key here>
-   To get your OpenAI API key https://platform.openai.com/account/api-keys.
+   Get your OpenAI API key https://platform.openai.com/account/api-keys.
    ```
 
 4. Start the backend server:
