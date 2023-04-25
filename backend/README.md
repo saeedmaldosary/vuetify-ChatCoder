@@ -33,6 +33,7 @@ npm install
 
    ```
    OPENAI_API_KEY=<your API key here>
+   To get your OpenAI API key https://platform.openai.com/account/api-keys.
    ```
 
 4. Start the backend server:
@@ -42,8 +43,6 @@ npm install
    ```
 
    The server will start at `http://localhost:8000`.
-
-The API will then use OpenAI's GPT-3 API to generate a readme file based on the name of your project, and return the file as a JSON response.
 
 ## Contributing
 
