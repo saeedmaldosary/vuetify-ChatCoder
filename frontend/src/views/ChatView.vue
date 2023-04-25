@@ -2,8 +2,19 @@
   <div class="page-wrapper">
     <v-container fluid fill-height>
       <v-layout column>
-        <v-flex grow>
-          <!-- Your main content goes here -->
+        <v-flex grow v-if="messageSent">
+          <div class="message-box mb-3">
+            <v-avatar class="mr-2 mb-2">
+              <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+            </v-avatar>
+            {{ message }}
+          </div>
+          <div class="message-box">
+            <v-avatar class="mr-2 mb-2">
+              <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+            </v-avatar>
+            Thanks
+          </div>
         </v-flex>
         <v-flex shrink>
           <v-card color="grey lighten-4">
@@ -49,14 +60,12 @@ export default {
   data() {
     return {
       message: "",
+      messageSent: false,
     };
   },
   methods: {
     sendMessage() {
-      // Do something with the message
-      console.log("Sending message:", this.message);
-      // Clear the message
-      this.message = "";
+      this.messageSent = true;
     },
   },
 };
@@ -64,7 +73,7 @@ export default {
 
 <style scoped>
 .page-wrapper {
-  max-width: 900px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -79,5 +88,11 @@ export default {
 .textarea {
   margin: auto;
   max-width: 900px;
+}
+
+.message-box {
+  background-color: #f5f5f5; /* add gray background to message box */
+  padding: 10px;
+  width: 100%; /* add width property to make message box take full width */
 }
 </style>
