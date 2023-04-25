@@ -1,9 +1,7 @@
-## Backend Readme File
 
-```
 # ChatCoder Backend
 
-The ChatCoder Backend is built using Express, dotenv, cors, and OpenAI, and provides the server-side functionality for generating required readme files for your projects.
+The ChatCoder Backend is built using Express, dotenv, cors, and OpenAI, and provides the server-side functionality.
 
 ## Project Setup
 
@@ -35,6 +33,7 @@ npm install
 
    ```
    OPENAI_API_KEY=<your API key here>
+   Get your OpenAI API key https://platform.openai.com/account/api-keys.
    ```
 
 4. Start the backend server:
@@ -44,8 +43,6 @@ npm install
    ```
 
    The server will start at `http://localhost:8000`.
-
-The API will then use OpenAI's GPT-3 API to generate a readme file based on the name of your project, and return the file as a JSON response.
 
 ## Contributing
 
