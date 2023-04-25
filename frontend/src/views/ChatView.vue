@@ -1,5 +1,5 @@
 <template>
-  <v-container class="" fluid fill-height>
+  <v-container fluid fill-height>
     <v-layout column>
       <v-flex grow>
         <!-- Your main content goes here -->
@@ -60,11 +60,6 @@ export default {
 </script>
 
 <style scoped>
-.page-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-}
-/* Your custom styles go here */
 .v-card {
   position: fixed;
   bottom: 0;
@@ -76,6 +71,5 @@ export default {
 .area {
   margin: auto;
   max-width: 1000px;
-  width: 100%;
 }
 </style>
