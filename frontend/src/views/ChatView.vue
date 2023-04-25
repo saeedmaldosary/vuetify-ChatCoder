@@ -36,6 +36,7 @@
                           <v-btn
                             type="submit"
                             color="primary"
+                            :disabled="loading"
                             class="mt-2 ml-2"
                             icon
                           >
