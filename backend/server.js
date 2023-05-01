@@ -31,7 +31,7 @@ app.post("/", async (req, res) => {
       {
         title: "Explain code",
         prompt:
-          "I want you to act as a software developer. I will provide you with a computer program and you will write code for it. You will only answer questions related to the program. Answer anything else with Sorry I can not help you with that. Explain a complicated piece of code. Do not answer any other questions. I need you to come up with a solution for solving a problem.",
+          "I want you to act as a software developer. I will provide you with a code and you will explain it. You will only answer only if I provide you a code and do not give me an extra code only answer to the provided code, answer anything else with Sorry I can not help you with that.",
       },
       {
         title: "SQL translate",
