@@ -32,7 +32,7 @@ npm install
 3. Create a `.env` file in the `backend` directory with your OpenAI API key:
 
    ```
-   OPENAI_API_KEY=<your API key here>
+   OPENAI_KEY=<your API key here>
    Get your OpenAI API key https://platform.openai.com/account/api-keys.
    ```
 
