@@ -1,5 +1,7 @@
 # ChatCoder
 
+https://user-images.githubusercontent.com/52779920/235653775-61823a75-f9b0-4f49-81a8-f15188cf1a6c.mp4
+
 ChatCoder is an AI-powered coding assistant that helps developers with their coding tasks. It consists of a frontend and backend component, with the frontend built using Vue 2 and Vuetify 2, and the backend built using Express and OpenAI.
 
 ## Features
