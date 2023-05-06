@@ -86,7 +86,7 @@ export default {
           isAi: true,
           value: "Loading...",
         });
-        const res = await fetch("http://localhost:8000", {
+        const res = await fetch(process.env.BACKEND_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
